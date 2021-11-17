@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <text>{{message}}</text>
+  <text>{{person.name}}</text>
+  <view class="{{ viewClassName }}"></view>
+  <view>{{'hello'}}</view>
+  <checkbox checked="{{false}}"></checkbox>
+  <view>
+    <view wx:for="{{todos}}" wx:for-item="aaa" wx:for-index="i">
+      <!-- 如果全局属性中有index这种关键词，可以使用wx:for-index去给当前遍历数据起别名字,默认用index -->
+      <text>{{i}}</text>
+      <checkbox checked="{{aaa.completed}}"></checkbox>
+      <text>{{aaa.name}}</text>
+      <!-- 如果全局属性中有item这种关键词，可以使用wx:for-item去给当前遍历数据起别名字,默认用item -->
+      <text>{{item}}</text>
+    </view>
+
+    <view>
+        <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+          <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+            <text wx:if="{{i<j}}">
+              {{i}} * {{j}} = {{i*j}}
+            </text>
+          </view>
+        </view>
+      </view>
+  </view>
+
+</view>

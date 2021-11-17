@@ -1,0 +1,16 @@
+Page({
+ data:{
+   message:"helloworld",
+   person:{
+     name:'zhangsan',
+     age:18
+   },
+   viewClassName:'hello',
+   todos:[
+     {name:'JavaScript',completed:false},
+     {name:'HTML',completed:true},
+     {name:'CSS',completed:false}
+   ],
+   item:"hehe"
+ }
+});

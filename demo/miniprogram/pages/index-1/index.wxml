@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <button bindtap="buttonTapHandle">点我</button> -->
+  <view bindtap="outterHandle" style="width: 200px;height: 200px;background-color: red;">
+    <view catchtap="innerHandle" style="width: 100px;height: 100px;background-color: blue;"></view>
+  </view>
+  <button bindtap="tap2Handle" data-name="张三">点我</button>
+</view>

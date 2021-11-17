@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index-2/index",
+    "pages/index-1/index",
+    "pages/index/index"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTitleText": "微信小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "debug": true,
+  "tabBar": {
+    "color": "#444",
+    "selectedColor": "#219bf3",
+    "backgroundColor": "#E0E0E0",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "Home",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-actived.png"
+      },
+      {
+        "text": "SumRecord",
+        "pagePath": "pages/index-1/index",
+        "iconPath": "images/note.png",
+        "selectedIconPath": "images/note-actived.png"
+      }
+    ]
+  }
+}
